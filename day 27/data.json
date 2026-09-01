@@ -1,0 +1,14 @@
+import json
+
+student = {
+    "name": "anil",
+    "age": 22,
+    "course": "python"
+}
+
+json_data = json.dumps(student)
+print(json_data)
+
+student = json.loads(json_data)
+print(student)
+print(type(student))
